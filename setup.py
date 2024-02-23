@@ -8,14 +8,14 @@ with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
 setup(
-    name="matfin",
+    name="interesting",
     version="0.0.1",
     author="Your Name",
     author_email="daniel.rocharuiz@bocconialumni.ot",
     description="A module for corporate finance and valuation of Fixed Income titles in Python.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/thegitofdaniel/matfin",
+    url="https://github.com/thegitofdaniel/interesting",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
