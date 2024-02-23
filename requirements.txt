@@ -1,0 +1,13 @@
+coverage
+ipywidgets
+matplotlib
+numpy-financial
+pandas
+pandas-stubs
+pre-commit
+pyarrow
+pydantic
+pytest
+ruff
+tqdm
+types-python-dateutil

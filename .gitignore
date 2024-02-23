@@ -1,0 +1,54 @@
+# specific files
+database.csv
+
+# Compiled Python Files
+*.pyc
+__pycache__/
+
+# Environment and Dependency Files
+.env
+.venv
+venv/
+env/
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.pyc
+*.pyo
+.ropeproject/
+
+# Logs and Temporary Files
+*.log
+*.swp
+*~
+
+# User-specific Files
+.DS_Store
+Thumbs.db
+
+# Compiled Code and Build Artifacts
+*.pyc
+*.pyo
+__pycache__/
+dist/
+build/
+*.egg-info/
+
+# Config and Settings Files
+*.ini
+*.db
+*.sqlite3
+*.sql
+
+# Data
+*.parquet
+notebooks/data
+notebooks/cifar_net.pth
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# tests
+.coverage

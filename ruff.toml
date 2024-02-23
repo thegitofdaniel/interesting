@@ -1,0 +1,18 @@
+target-version = "py312"
+extend-include = ["*.ipynb"]
+
+[lint]
+extend-select = [
+  "UP", # pyupgrade
+  "I", # isort
+  "N", # pep8-naming
+  "LOG", # flake8-loggin
+#  "C90", # mccabe
+#  "D", # pydocstyle
+#  "S", # flake8-bandit
+#  "PL", # pylint
+]
+ignore = ["E402"]
+
+[lint.pydocstyle]
+convention = "pep257" # pep257, numpy, or google
