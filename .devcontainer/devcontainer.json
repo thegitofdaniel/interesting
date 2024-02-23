@@ -1,0 +1,33 @@
+{
+  "name": "Python 3",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+  "features": {},
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postCreateCommand": "",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "GitHub.codespaces",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.github-vscode-theme",
+        "github.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "gruntfuggly.todo-tree",
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "mechatroner.rainbow-csv",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "wayou.vscode-todo-highlight"
+      ]
+    }
+  }
+}
