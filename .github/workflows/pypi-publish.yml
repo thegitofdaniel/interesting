@@ -7,11 +7,15 @@ jobs:
   pypi-publish:
     name: upload release to PyPI
     runs-on: ubuntu-latest
-    environment: pypi_publish_env
     permissions:
+      # This permission is needed for private repositories.
+      contents: read
+      # IMPORTANT: this permission is mandatory for trusted publishing
       id-token: write
     steps:
+      - uses: actions/checkout@v3
+
+      - uses: pdm-project/setup-pdm@v3
+
       - name: Publish package distributions to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          password: ${{ secrets.PYPI_TOKEN }}
+        run: pdm publish
