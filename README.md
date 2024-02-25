@@ -51,6 +51,11 @@ pdm build
 # Install package
 ```python
 pip install -e .
+
+# or
+
+pdm install
+pdm plugin add pdm-publish
 ```
 
 # Publising

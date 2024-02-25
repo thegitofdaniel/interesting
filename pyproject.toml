@@ -8,6 +8,10 @@ distribution = true
 [tool.pdm.build]
 includes = ["src"]
 
+[tool.pdm.dev-dependencies]
+dev = [
+    "pre-commit>=3.6.2",
+]
 [project]
 name = "interesting"
 version = "0.0.1"
@@ -23,6 +27,7 @@ dependencies = [
     "numpy-financial",
     "pandas",
     "pandas-stubs",
+    "pdm",
     "pre-commit",
     "pyarrow",
     "pydantic",

@@ -1,16 +1,14 @@
 on:
-  release:
-    types:
-      - created
+  push
 
-name: pypi_release_env
+name: pypi_publish
 
 jobs:
   pypi-publish:
     name: upload release to PyPI
     runs-on: ubuntu-latest
     # Specifying a GitHub environment is optional, but strongly encouraged
-    environment: release
+    environment: pypi_publish_env
     permissions:
       # IMPORTANT: this permission is mandatory for trusted publishing
       id-token: write
