@@ -2,3 +2,40 @@
 addopts = [
     "--import-mode=importlib",
 ]
+
+[tool.pdm]
+distribution = true
+[tool.pdm.build]
+includes = ["src"]
+
+[project]
+name = "interesting"
+version = "0.0.1"
+description = "A corporate finance package focused on Brazilian Fixed Income titles."
+authors = [
+    {name = "Daniel Ruiz", email = "daniel.rocharuiz@bocconialumni.it"},
+]
+
+dependencies = [
+    "coverage",
+    "ipywidgets",
+    "matplotlib",
+    "numpy-financial",
+    "pandas",
+    "pandas-stubs",
+    "pre-commit",
+    "pyarrow",
+    "pydantic",
+    "pytest",
+    "ruff",
+    "setuptools",
+    "tqdm",
+    "types-python-dateutil",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

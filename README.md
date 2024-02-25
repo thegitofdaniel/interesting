@@ -4,18 +4,14 @@ python3 -m venv venv  # Recreate virtual environment
 source venv/bin/activate  # Activate virtual environment (Linux)
 pip install -r requirements.txt
 ```
+# Development
 
-# Install package
-```python
-pip install -e .
-```
-
-# Run tests
+## Run tests
 ```python
 python -m pytest
 ```
 
-# Run test coverage
+## Run test coverage
 ```bash
 # run tests
 coverage run -m pytest
@@ -28,10 +24,10 @@ coverage html
 
 # open report in browser
 cd htmlcov
-# open index.html
+open index.html
 ```
 
-# Pre-Commit (Format and Linting)
+## Pre-Commit (Format and Linting)
 ```bash
 # pre-commit (ruff + other hooks)
 pre-commit run -a
@@ -41,4 +37,24 @@ ruff check .
 
 # just ruff: check and fix
 ruff check . --fix
+```
+
+# Packaging
+
+# Setup
+```bash
+pdm init
+
+pdm build
+```
+
+# Install package
+```python
+pip install -e .
+```
+
+# Publising
+```python
+pdm plugin add pdm-publish
+pdm publish --repository interesting
 ```
