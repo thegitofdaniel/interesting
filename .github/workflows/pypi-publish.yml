@@ -5,7 +5,7 @@ name: pypi_publish
 
 jobs:
   pypi-publish:
-    name: upload release to PyPI
+    name: Upload release to PyPI
     runs-on: ubuntu-latest
     permissions:
       # This permission is needed for private repositories.
@@ -14,8 +14,6 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v3
-
       - uses: pdm-project/setup-pdm@v3
-
       - name: Publish package distributions to PyPI
-        run: pdm publish
+        run: pdm publish --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
