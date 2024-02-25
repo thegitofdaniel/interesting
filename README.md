@@ -1,60 +1,29 @@
-# Create a virtual environment
-```python
-python3 -m venv venv  # Recreate virtual environment
-source venv/bin/activate  # Activate virtual environment (Linux)
-pip install -r requirements.txt
-```
-# Development
+# Interesting - Brazilian Fixed Income Titles
 
-## Run tests
-```python
-python -m pytest
-```
+## Overview
 
-## Run test coverage
+The `interesting` Python package is a specialized toolkit for dealing with Brazilian fixed income titles. It provides functionalities to build, analyze, visualize, and valuate various types of fixed income instruments and portfolios made thereof.
+
+There is a
+
+## Features
+
+- **Build**: Build cashflows from fixed income definitions.
+- **Analytics**: Performing analytical calculations such as valuation (XXX one day also yield calculations, duration, convexity, etc).
+- **Visualization**: Visualizing fixed income data through plots and charts.
+- **Portfolio Management**: Tools for managing fixed income portfolios.
+- **Risk Assessment**: Basic risk assessment (plot against FGC limit).
+
+## Installation
+
+This package in on PyPi, and hence you may install the `interesting` package via pip:
+
 ```bash
-# run tests
-coverage run -m pytest
-
-# print brief report
-coverage report -m
-
-# generate html report
-coverage html
-
-# open report in browser
-cd htmlcov
-open index.html
+pip install interesting
 ```
 
-## Pre-Commit (Format and Linting)
-```bash
-# pre-commit (ruff + other hooks)
-pre-commit run -a
-
-# just ruff: check
-ruff check .
-
-# just ruff: check and fix
-ruff check . --fix
-```
-
-# Packaging
-
-# Setup
-```bash
-pdm init
-
-pdm build
-```
-
-# Install package
-```python
-pip install -e .
-```
-
-# Publising
-```python
-pdm plugin add pdm-publish
-pdm publish --repository interesting
-```
+# A few nice things
+- `interesting` classes are powered by `pydantic` to guarantee proper input validation.
+- `interesting` codebase is kept neat using `ruff`.
+- `interesting` is kept safe using: XXX (to be developed).
+- `interesting` is managed using automated pipelines (GitHub actions).
