@@ -24,6 +24,7 @@ pip install interesting
 
 # A few nice things
 - `interesting` classes are powered by `pydantic` to guarantee proper input validation.
-- `interesting` codebase is kept neat using `ruff`.
+- `interesting` is kept neat using `ruff`.
+- `interesting` is kept functional using `pytest` and `coverage`.
+- `interesting` is managed using GitHub actions.
 - `interesting` is kept safe using: XXX (to be developed).
-- `interesting` is managed using automated pipelines (GitHub actions).
