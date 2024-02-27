@@ -14,7 +14,7 @@ dev = [
 ]
 [project]
 name = "interesting"
-version = "0.0.1"
+version = "0.0.2"
 description = "A corporate finance package focused on Brazilian Fixed Income titles."
 authors = [
     {name = "Daniel Ruiz", email = "daniel.rocharuiz@bocconialumni.it"},
