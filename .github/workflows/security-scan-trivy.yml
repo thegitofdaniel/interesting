@@ -1,4 +1,4 @@
-name: Security scan
+name: Security scan Trivy
 
 on:
   push:
