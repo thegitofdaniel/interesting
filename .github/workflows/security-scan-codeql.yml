@@ -5,5 +5,9 @@ on:
     branches: [feature/*, main]
 
 jobs:
-  ci:
+  scan:
     uses: thegitofdaniel/pipelines/.github/workflows/security-scan-codeql.yml@main
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
