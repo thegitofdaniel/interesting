@@ -1,0 +1,9 @@
+name: Publish PyPi
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  ci:
+    uses: thegitofdaniel/pipelines/.github/workflows/publish-pypi.yml@main
