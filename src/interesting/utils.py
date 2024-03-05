@@ -20,6 +20,7 @@ bonds_info = {
     "vgbl": {"is_fgc": False, "is_taxable": True},
     "pgbl": {"is_fgc": False, "is_taxable": True},
     "ntnb": {"is_fgc": False, "is_taxable": True},
+    "ltn": {"is_fgc": False, "is_taxable": True},
 }
 
 
