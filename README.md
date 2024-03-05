@@ -22,9 +22,14 @@ This package in on PyPi, and hence you may install the `interesting` package via
 pip install interesting
 ```
 
+## Usage
+[Please check the notebooks folder](notebooks/) for demos of how to use the `interesting` package.
+
 # A few nice things
 - `interesting` classes are powered by `pydantic` to guarantee proper input validation.
 - `interesting` is kept neat using `ruff`.
 - `interesting` is kept functional using `pytest` and `coverage`.
-- `interesting` is managed using GitHub actions.
-- `interesting` is kept safe using: XXX (to be developed).
+- `interesting` is configured to be developed with `GitHub CodeQL`.
+- `interesting` is configured to be developed with `GitHub Codespace`.
+- `interesting` is orchestrated with `GitHub Actions`.
+

@@ -1,5 +1,6 @@
 coverage
 ipywidgets
+ipykernel
 matplotlib
 numpy-financial
 pandas
