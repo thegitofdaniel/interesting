@@ -32,4 +32,3 @@ pip install interesting
 - `interesting` is configured to be developed with `GitHub CodeQL`.
 - `interesting` is configured to be developed with `GitHub Codespace`.
 - `interesting` is orchestrated with `GitHub Actions`.
-
