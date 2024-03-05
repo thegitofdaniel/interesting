@@ -1,4 +1,5 @@
 coverage
+ipykernel
 ipywidgets
 matplotlib
 numpy-financial
